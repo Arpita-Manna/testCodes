@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+  padding: 20px;
+  
+}
+header{
+    height: 90vh;
+    background-image: linear-gradient(to right bottom,
+                          rgba(8, 102, 79, 0.781),
+                          rgba(190, 14, 196, 0.637),
+                          rgba(189, 189, 22, 0.76)),  
+                           url("https://i1.wp.com/www.iamabiker.com/wp-content/uploads/2016/10/Royal-Enfield-Himalayan-HD-wallpapers-3.jpg?fit=1920%2C1080");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+}
+.logo{
+    height: 100px;
+    width: 100px;
+    margin: 20px;
+    position: absolute;
+}
+.textbox{
+    position: absolute;
+    left: 50%;
+    top: 45%;   
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(236, 209, 168);
+}
+::selection{
+    background: rgba(11, 185, 216, 0.993);
+    color: rgba(9, 32, 161, 0.993);
+}
+.main-text{
+    display: inline-block;
+    font-size: 50px;
+    font-family:  'Spirax', cursive;
+    font-weight: 600;
+    padding-bottom: 20px;
+    animation-name: Move-to-right;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in;
+
+    
+}
+.sub-text{
+    display: inline-block;
+    font-style: 30px;
+    font-weight: 800;
+    color: blanchedalmond;
+    letter-spacing: 6px;
+    padding-bottom: 30px;
+    animation-name: Move-to-left;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+
+
+    
+}
+@keyframes Move-to-right{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    80%{
+        opacity: .6;
+        transform: translateX(15px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0)
+    }
+}
+
+@keyframes Move-to-left{
+    0%{
+        opacity: 0;
+        transform: translateX(70px);
+    }
+    70%{
+        opacity: .7;
+        transform: translateX(-15px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+.btn:link,
+.btn:visited{
+    display: inline-block;
+    text-decoration: none;
+    font-size:20px; 
+    padding: 10px 45px;
+    border-radius: 100px;
+    position: relative;
+  
+}
+
+.btn-white{
+    color: black;
+    background: rgb(255, 255, 255);
+    transition: all .3s;
+
+}
+
+.btn-white:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 3px 5px rgba(11, 168, 129, 0.726);
+
+}
+.btn-white:active{
+    transform: translateY(-1.5px);
+    box-shadow: 0 2px 4px rgba(231, 199, 14, 0.76);
+}
+
+.btn::after{
+    content: "";
+    display: inline-block;
+    border-radius: 100px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .5s;
+
+}
+.btn-white::after{
+    background-color:  rgb(255, 255, 255);
+}
+.btn:hover::after{
+    transform: scale(1.5) scaleY(1.1);
+    opacity: 0;
+}
+.btn-animated{
+    animation: Totop .4s ease-in;
+    animation-fill-mode:backwards;
+    animation-delay: 1.5s;
+}
+@keyframes Totop{
+    0%{
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0);
+        opacity: 1;
+    }
+}
