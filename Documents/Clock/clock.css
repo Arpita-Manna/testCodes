@@ -1,0 +1,41 @@
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+body{
+      height: 100vh;
+      background-image:url('https://cdn-images-1.medium.com/max/1600/0*I-sI3u34g0ydRqyA');
+      background-repeat: no-repeat;
+      background-position: center;
+      position: relative;
+
+}
+.main-text {
+    height: 50%;
+    width: 40%;
+    top: 25vh;
+    left: 400px;
+    position: absolute;
+    background-color: rgb(71, 184, 199);
+    padding: 40px;
+
+    
+}
+.day, .date, .time {
+      text-align: center;
+      text-transform: uppercase;
+      border-bottom: 2px solid rgba(31, 31, 109, 0.822);
+      margin: 20px;
+      font-size: 40px;
+     
+}
+.thanks {
+      font-family: 'Charm', cursive;
+      padding-left: 20px;
+      font-size: 28px;
+}
+.thanks i {
+      color: rgba(153, 9, 76, 0.911);
+}
