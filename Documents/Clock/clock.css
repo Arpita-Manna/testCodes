@@ -20,6 +20,7 @@ body{
     position: absolute;
     background-color: rgb(71, 184, 199);
     padding: 40px;
+    box-shadow: 3px 3px 1px rgba(23, 16, 126, 0.479);
 
     
 }
