@@ -1,0 +1,84 @@
+* {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+}
+.header {
+      margin-bottom: 50px;
+}
+
+.hero {
+      
+      width: 950px;
+      padding: 20px 50px;
+}
+
+.main-bar img {
+      padding-right: 70px;
+}
+.main-bar h2, .main-bar h3, .main-bar h6, .main-bar p, .main-bar .qoute {
+    padding-left: 90px;
+    padding-right: 50px;
+    
+}
+.quote {
+
+}
+ul {
+      padding-left: 110px;
+}
+p {
+      font-size: 17px;
+      line-height: 30px;
+      font-weight: 400;
+}
+.nonhero {
+      height: 200px;
+}
+.side-bar {
+      /* background: #f7f7f7; */
+      padding: 0px auto;
+}
+.side-bar .card {
+      margin-top: 20px;
+      width: 270px;
+      left: 15px;
+      border: none;
+      border-radius: 0px;
+      box-shadow: 1px 2px 15px 13px #f7f7f7;
+}
+.side-bar .bg {
+      background: #f7f7f76e;
+}
+.side-bar .card img {
+      height: 150px;
+      width: 150px;
+      border: 2px solid white;
+      margin: 30px 80px;
+      background-position: center;
+}
+.side-bar .card i {
+      color: #ffcc00;
+      font-size: 15px;
+      padding-left: 15px;
+      padding-bottom: 10px;
+}
+.side-bar .posts img {
+      height: 50px;
+      width: 100px;
+}
+.side-bar .posts .buttons .btn {
+      font-size: 16px;
+      
+}
+.buttons .active {
+      background: #f7f7f7;
+}
+.side-bar .description {
+      
+      margin-left: 20px;
+
+}
+.description h1, .description p {
+      font-size: 14px;
+}
